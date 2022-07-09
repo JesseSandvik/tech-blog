@@ -1,0 +1,5 @@
+@use "../settings/" as *;
+
+footer {
+    grid-row: 3 / -1;
+}

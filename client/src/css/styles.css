@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header {
+  background: #1b1b1b;
+  grid-row: 1/1;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

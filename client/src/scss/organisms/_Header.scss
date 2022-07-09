@@ -1,0 +1,7 @@
+@use "../settings/" as *;
+
+header {
+    background: $medium-black;
+    grid-row: 1 / 1;
+    padding: $padding;
+}
