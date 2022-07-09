@@ -8,8 +8,7 @@ describe("<ListItem />", () => {
     const listItem = screen.getByRole("listitem");
 
     expect(listItem).toBeInTheDocument();
-    expect(listItem.textContent).toEqual("testing");
-    expect(listItem.textContent).not.toEqual("bad string");
+    expect(listItem.nodeName.toLowerCase()).toEqual("li");
   });
   test("02. ListItem component renders the prop children", () => {
     render(<ListItem>testing</ListItem>);
