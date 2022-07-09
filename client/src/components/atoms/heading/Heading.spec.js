@@ -18,7 +18,7 @@ describe('<Heading />', () => {
 
     expect(heading).toBeInTheDocument();
   });
-  test('03. Heading component renders the children prop', () => {
+  test('03. Heading component renders the prop children', () => {
     render(<Heading>I am a child prop</Heading>);
 
     const heading = screen.getByRole('heading', {
