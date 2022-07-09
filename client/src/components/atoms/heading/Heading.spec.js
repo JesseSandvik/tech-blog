@@ -19,6 +19,7 @@ describe("<Heading />", () => {
     const heading = screen.getByRole("heading", { name: /whoops/i });
 
     expect(heading).toBeInTheDocument();
+    expect(heading.textContent).toEqual("whoops");
   });
   test("03. Heading component renders the prop children", () => {
     render(<Heading>I am a child prop</Heading>);
@@ -28,6 +29,8 @@ describe("<Heading />", () => {
     });
 
     expect(heading).toBeInTheDocument();
+    expect(heading.textContent).toEqual("I am a child prop");
+    expect(heading.textContent).not.toEqual("this shouldn't be rendering");
   });
   test("03. Heading component inherits className passed as prop", () => {
     render(<Heading className="test-className">test</Heading>);

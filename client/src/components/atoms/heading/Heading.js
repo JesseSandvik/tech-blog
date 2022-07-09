@@ -6,14 +6,13 @@ function Heading({ children, className, id, level }) {
 }
 
 Heading.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
   className: PropTypes.string,
   id: PropTypes.string,
   level: PropTypes.string,
 };
 
 Heading.defaultProps = {
-  children: React.createElement("div"),
   className: undefined,
   id: undefined,
   level: "5",

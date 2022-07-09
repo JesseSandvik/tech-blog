@@ -10,14 +10,13 @@ function ListItem({ children, className, id, title }) {
 }
 
 ListItem.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
   className: PropTypes.string,
   id: PropTypes.string,
   title: PropTypes.string,
 };
 
 ListItem.defaultProps = {
-  children: React.createElement("div"),
   className: undefined,
   id: undefined,
   title: undefined,
