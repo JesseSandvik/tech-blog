@@ -92,7 +92,7 @@ describe("<Button />", () => {
     expect(button.textContent).not.toEqual("this shouldn't render");
     expect(button).not.toHaveAttribute("disabled");
   });
-  test("07. Button component is disabled when passed the 'disabled' prop", () => {
+  test("08. Button component is disabled when passed the 'disabled' prop", () => {
     render(
       <Button disabled onClick={handleClick}>
         test button
