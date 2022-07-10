@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
 
-function Button({ children, className, condition, id, onClick }) {
+function Button({ children, className, disabled, id, onClick, type }) {
   return (
     <button
       className={className}
+      disabled={disabled}
       id={id}
       onClick={onClick}
-      type={condition ? "button" : "submit"}
+      type={type === "button" ? "button" : "submit"}
     >
       {children}
     </button>
@@ -16,15 +17,17 @@ function Button({ children, className, condition, id, onClick }) {
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
-  condition: PropTypes.string,
+  disabled: PropTypes.bool,
   id: PropTypes.string,
   onClick: PropTypes.func.isRequired,
+  type: PropTypes.string,
 };
 
 Button.defaultProps = {
   className: undefined,
-  condition: undefined,
+  disabled: false,
   id: undefined,
+  type: "submit",
 };
 
 export default Button;
