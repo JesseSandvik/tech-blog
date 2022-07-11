@@ -12,7 +12,7 @@ function App() {
 
   const lightTheme = {
     background: "#f0f0f0",
-    color: "$0f0f0f",
+    color: "#0f0f0f",
   };
 
   const [theme, setTheme] = useState("");

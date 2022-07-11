@@ -11,6 +11,7 @@
 
 header {
   background: #1b1b1b;
+  color: #f0f0f0;
   grid-row: 1/1;
   padding: 1rem;
 }

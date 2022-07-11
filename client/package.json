@@ -25,6 +25,7 @@
     "extends": [
       "eslint:recommended",
       "plugin:react/recommended",
+      "plugin:cypress/recommended",
       "airbnb",
       "airbnb/hooks",
       "prettier",
@@ -36,6 +37,12 @@
     ],
     "rules": {
       "no-console": "off",
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": true
+        }
+      ],
       "react/react-in-jsx-scope": "off",
       "prettier/prettier": "error",
       "react/jsx-filename-extension": [
@@ -71,6 +78,7 @@
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.2.1",
