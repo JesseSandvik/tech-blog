@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
     const userPreferredTheme = localStorage.getItem("theme");
-    if (userPreferredTheme !== "") {
+    if (userPreferredTheme) {
       setTheme(userPreferredTheme);
     } else {
       setTheme("dark");
