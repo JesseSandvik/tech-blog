@@ -22,6 +22,7 @@
     ],
     "rules": {
       "no-console": "off",
+      "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
       "import/no-extraneous-dependencies": [
         "error",
         {

@@ -1,4 +1,5 @@
 const express = require("express");
+const errorHandler = require("./errors/errorHandler/errorHandler");
 const notFound = require("./errors/notFound/notFound");
 
 const app = express();
@@ -8,5 +9,7 @@ app.get("/", (req, res) => {
 });
 
 app.use(notFound);
+
+app.use(errorHandler);
 
 module.exports = app;
